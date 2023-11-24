@@ -1,12 +1,40 @@
-﻿<Window x:Class="Visualizer.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Visualizer"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Visualizer.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="COM Plotter Visualizer" Height="450" Width="800">
+	<Grid>
+		<ToolBar Height="31" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+			<ToolBar.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<RotateTransform/>
+				</TransformGroup>
+			</ToolBar.RenderTransform>
+			<ComboBox x:Name="PortsCB" HorizontalAlignment="Center" VerticalAlignment="Top" Width="70" Height="20" Margin="1,3,1,0"/>
+			<Button>
+				<Button x:Name="OpenCloseB" Content="Open" Width="40" Height="20"/>
+			</Button>
+			<ComboBox x:Name="BaudRatesCB" HorizontalAlignment="Center" VerticalAlignment="Top" Width="70" Height="20" Margin="1,3,1,0" >
+				<System:String>110</System:String>
+				<System:String>300</System:String>
+				<System:String>600</System:String>
+				<System:String>1200</System:String>
+				<System:String>2400</System:String>
+				<System:String>4800</System:String>
+				<System:String>9600</System:String>
+				<System:String>14400</System:String>
+				<System:String>19200</System:String>
+				<System:String>38400</System:String>
+				<System:String>57600</System:String>
+				<System:String>115200</System:String>
+				<System:String>128000</System:String>
+				<System:String>256000</System:String>
+			</ComboBox>
+		</ToolBar>
+	</Grid>
 </Window>
