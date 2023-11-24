@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
         xmlns:local="clr-namespace:Visualizer"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Visualizer.MainWindow"
         mc:Ignorable="d"
@@ -36,5 +37,8 @@
 				<System:String>256000</System:String>
 			</ComboBox>
 		</ToolBar>
+		<d3:Chart x:Name="GraphChart" IsXAxisReversed="True" Margin="0,31,0,0">
+			<Grid Name="GraphLines"/>
+		</d3:Chart>
 	</Grid>
 </Window>

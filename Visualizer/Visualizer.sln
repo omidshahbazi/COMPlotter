@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualizer", "Visualizer.cs
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteractiveDataDisplay.WPF", "InteractiveDataDisplay.WPF\src\InteractiveDataDisplay.WPF.csproj", "{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveChartsCore", "LiveCharts2\src\LiveChartsCore\LiveChartsCore.csproj", "{620EB4BE-3513-4317-99DB-A861EF1DCFE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
