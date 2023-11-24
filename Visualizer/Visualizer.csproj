@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="InteractiveDataDisplay.WPF\src\InteractiveDataDisplay.WPF.csproj">
+      <Project>{2d34544c-2df2-4b20-a43a-6c8d2df3dd82}</Project>
+      <Name>InteractiveDataDisplay.WPF</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
