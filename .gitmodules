@@ -1,0 +1,3 @@
+[submodule "Visualizer/InteractiveDataDisplay.WPF"]
+	path = Visualizer/InteractiveDataDisplay.WPF
+	url = https://github.com/microsoft/InteractiveDataDisplay.WPF.git
