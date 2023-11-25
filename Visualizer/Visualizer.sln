@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visualizer", "Visualizer.csproj", "{3A548029-2452-4C34-997D-0FCA80ECAA8C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InteractiveDataDisplay.WPF", "InteractiveDataDisplay.WPF\src\InteractiveDataDisplay.WPF.csproj", "{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveChartsCore", "LiveCharts2\src\LiveChartsCore\LiveChartsCore.csproj", "{620EB4BE-3513-4317-99DB-A861EF1DCFE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScottPlot.WPF", "ScottPlot\src\ScottPlot4\ScottPlot.WPF\ScottPlot.WPF.csproj", "{24621490-26BF-4E63-BBBC-4F31C0D0426B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Visualizer", "Visualizer\Visualizer.csproj", "{9ED79CD3-8C99-4F94-B32C-4D53A05E879D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScottPlot", "ScottPlot\src\ScottPlot4\ScottPlot\ScottPlot.csproj", "{9A03F3BD-09D9-4582-88E0-34C9F1D4294B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3A548029-2452-4C34-997D-0FCA80ECAA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3A548029-2452-4C34-997D-0FCA80ECAA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3A548029-2452-4C34-997D-0FCA80ECAA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3A548029-2452-4C34-997D-0FCA80ECAA8C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D34544C-2DF2-4B20-A43A-6C8D2DF3DD82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{620EB4BE-3513-4317-99DB-A861EF1DCFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24621490-26BF-4E63-BBBC-4F31C0D0426B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24621490-26BF-4E63-BBBC-4F31C0D0426B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24621490-26BF-4E63-BBBC-4F31C0D0426B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24621490-26BF-4E63-BBBC-4F31C0D0426B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED79CD3-8C99-4F94-B32C-4D53A05E879D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED79CD3-8C99-4F94-B32C-4D53A05E879D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED79CD3-8C99-4F94-B32C-4D53A05E879D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED79CD3-8C99-4F94-B32C-4D53A05E879D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A03F3BD-09D9-4582-88E0-34C9F1D4294B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A03F3BD-09D9-4582-88E0-34C9F1D4294B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A03F3BD-09D9-4582-88E0-34C9F1D4294B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A03F3BD-09D9-4582-88E0-34C9F1D4294B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,15 +4,15 @@
     <OutputType>WinExe</OutputType>
     <TargetFrameworks>net48</TargetFrameworks>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ScottPlot.WPF\ScottPlot.WPF.csproj" />
-    <PackageReference Include="Microsoft.CodeAnalysis.Metrics" Version="*" >
+    <ProjectReference Include="..\ScottPlot\src\ScottPlot4\ScottPlot.WPF\ScottPlot.WPF.csproj" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Metrics" Version="*">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,7 +29,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
 
 
 </Project>

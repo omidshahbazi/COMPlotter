@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:d3="clr-namespace:InteractiveDataDisplay.WPF;assembly=InteractiveDataDisplay.WPF"
         xmlns:local="clr-namespace:Visualizer"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Visualizer.MainWindow"
+        xmlns:ScottPlot="clr-namespace:ScottPlot;assembly=ScottPlot.WPF"
         mc:Ignorable="d"
         Title="COM Plotter Visualizer" Height="450" Width="800">
 	<Grid>
-		<ToolBar Height="31" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+		<ToolBar Height="31" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="#FFE5E5E5">
 			<ToolBar.RenderTransform>
 				<TransformGroup>
 					<ScaleTransform/>
@@ -37,8 +37,22 @@
 				<System:String>256000</System:String>
 			</ComboBox>
 		</ToolBar>
-		<d3:Chart x:Name="GraphChart" IsXAxisReversed="True" Margin="0,31,0,0">
-			<Grid Name="GraphLines"/>
-		</d3:Chart>
+		<TabControl Margin="0,31,0,0" Background="White">
+			<TabItem Header="Graph" Margin="-2,0,-2,0">
+				<Grid Background="#FFE5E5E5">
+					<ScottPlot:WpfPlot x:Name="GraphsP"/>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Console">
+				<Grid Background="#FFE5E5E5">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="17*"/>
+						<ColumnDefinition Width="777*"/>
+					</Grid.ColumnDefinitions>
+					<ListBox x:Name="ConsoleLB" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+				</Grid>
+			</TabItem>
+		</TabControl>
+
 	</Grid>
 </Window>
